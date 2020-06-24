@@ -98,11 +98,19 @@ h4 {
   margin-bottom: 10px;
 }
 
-select {
+.select {
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   background: url(../img/dropdown.png) no-repeat right center;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #D99734;
+  border-radius: 5px;
+  outline: none;
+  color: #494949;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .input-title {
