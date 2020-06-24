@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Калькулятор веса</title>
-    <link rel="stylesheet" type="text/css" href="style/bootstrap.min.css" rel="stylesheet"></link>
-    <link rel="stylesheet" type="text/css" href="style/style.css" rel="stylesheet"></link>
+    <title>Document</title>
+    <link href="style/bootstrap.min.css" rel="stylesheet"></link>
+    <link href="style/style.css" rel="stylesheet"></link>
     
 </head>
 <body>
@@ -13,12 +13,12 @@
         <div class="header">
             <div class="container">
                 <div class="row header-block">
-                    <div class="col-2">
-                        <svg width="162" height="34">
+                    <div class="col-6">
+                        <svg width="150" height="32">
                             <use xlink:href="img/icons.svg#logo"></use>
                         </svg>
                     </div>
-                    <div class="offset-8 col-2 header-link">
+                    <div class="col-6 header-link">
                         <div class="register-link">
                         <a class="register-links" href="#">Регистрация</a>
                         <span>/</span>
@@ -28,21 +28,29 @@
                 </div>
             </div>
         </div>
-                <div class="menu-bg">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12 menu-block">
-                                <a href="#" class="menu-link">Главная</a>
-                                <a href="#" class="menu-link">Походы</a>
-                                <a href="#" class="menu-link">Медицина</a>
-                                <a href="#" class="menu-link">Кухня</a>
-                                <a href="#" class="menu-link">Маршруты</a>
-                                <a href="#" class="menu-link">Точки интереса</a>
-                                <a href="#" class="menu-link">Калькулятор</a>
-                            </div>
+        <div class="menu-bg">
+                <nav class="container navbar navbar-expand-lg">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon">
+                                <svg height="20"  width="20">
+                                    <use xlink:href="img/icons.svg#hamburger"></use>
+                                </svg>
+                            </span>
+                            </button>
+                        <div class="row collapse navbar-collapse" id="navbarSupportedContent"">
+                            <ul class="col-md-12 menu-block navbar-nav mr-auto">
+                                <li class="nav-item"><a href="#" class="menu-link nav-link">Главная</a></li>
+                                <li class="nav-item"><a href="#" class="menu-link nav-link">Походы</a></li>
+                                <li class="nav-item"><a href="#" class="menu-link nav-link">Медицина</a></li>
+                                <li class="nav-item"><a href="#" class="menu-link nav-link">Кухня</a></li>
+                                <li class="nav-item"><a href="#" class="menu-link nav-link">Маршруты</a></li>
+                                <li class="nav-item"><a href="#" class="menu-link nav-link">Точки интереса</a></li>
+                                <li class="nav-item"><a href="#" class="menu-link nav-link">Калькулятор</a></li>
+                            </ul>
                         </div>
-                    </div>
-                </div>
+
+                </nav>
+            </div>
             
         
     </header>
@@ -56,12 +64,12 @@
                 </div>
                 
                 <div class="row input-title">
-                    <div class="col-4">
+                    <div class="col-sm-12 col-lg-4">
                         <h4>Общий вес снаряжения<h4>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-5">
+                    <div class="col-sm-12 col-md-7 col-lg-5">
                         <input class="calc-inp" autocomplete="off" id="weight">
                     </div>
                 </div>
@@ -71,11 +79,11 @@
                     </div>
                 </div>
                 <div class="row calc-unit">
-                    <div class="col-3 input-section">
+                    <div class="col-sm-6 col-lg-3 input-section">
                         <span class="input-name" >Имя:</span>
                         <input class="calc-inp" id="name-inp" type="text">
                     </div>
-                    <div class="col-2">
+                    <div class="col-sm-6 col-lg-2">
                         <span class="input-name">Пол:</span>
                         <div class="input-group mb-3">
                             <select class="calc-inp select" id="sexGroupSelect">
@@ -84,7 +92,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-sm-6 col-lg-3">
                         <span class="input-name">Снаряжение:</span>
                         <div class="input-group mb-3">
                             <select class="calc-inp select" id="equipGroupSelect">
@@ -94,7 +102,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-sm-6 col-lg-3">
                         <span class="input-name">Физическая подготовка:</span>
                         <div class="input-group mb-3">
                             <select class="calc-inp select" id="strainghtGroupSelect">
@@ -104,7 +112,7 @@
                     </div>
                 </div> 
                 <div class="row">
-                    <div class="col-3">
+                    <div class="col-sm-6 col-lg-3">
                         <button class="btn" type="submit">Добавить участника</button>
                     </div>
                 </div>
@@ -121,12 +129,12 @@
                 </div>
             </div>
             <div class="row table-header">
-                <div class="col-2 ">Имя:</div>
-                <div class="col-2 ">Пол:</div>
-                <div class="col-2 ">Снаряжение:</div>
-                <div class="col-2 ">Физ. подготовка:</div>
-                <div class="col-2 ">Коэффициент:</div>
-                <div class="col-2">Рекомендуемый вес:</div>
+                <div class="col-4 col-lg-2 ">Имя:</div>
+                <div class="col-lg-2 sex">Пол:</div>
+                <div class="col-lg-2 equipment">Снаряжение:</div>
+                <div class="col-lg-2 strength">Физ. подготовка:</div>
+                <div class="col-4 col-lg-2 ">Коэффициент:</div>
+                <div class="col-4 col-lg-2 weight-title">Вес:</div>
             </div>
             <div class="result">
             </div>
@@ -153,6 +161,5 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/calculator.js"></script>
-    <script src="js/main.js"></script>
 </body>
 </html>
