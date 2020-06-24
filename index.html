@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style/bootstrap.min.css" rel="stylesheet"></link>
+    <link href="style/style.css" rel="stylesheet"></link>
+    
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="container">
+                <div class="row header-block">
+                    <div class="col-2">
+                        <svg width="162" height="34">
+                            <use xlink:href="img/icons.svg#logo"></use>
+                        </svg>
+                    </div>
+                    <div class="offset-8 col-2 header-link">
+                        <div class="register-link">
+                        <a class="register-links" href="#">Регистрация</a>
+                        <span>/</span>
+                        <a class="register-links" href="#">Вход</a>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+                <div class="menu-bg">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 menu-block">
+                                <a href="#" class="menu-link">Главная</a>
+                                <a href="#" class="menu-link">Походы</a>
+                                <a href="#" class="menu-link">Медицина</a>
+                                <a href="#" class="menu-link">Кухня</a>
+                                <a href="#" class="menu-link">Маршруты</a>
+                                <a href="#" class="menu-link">Точки интереса</a>
+                                <a href="#" class="menu-link">Калькулятор</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+        
+    </header>
+    <section class="content">
+        <div class="container main-content">
+            <form id="calc-form">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>Распределите вес честно</h1>
+                    </div>
+                </div>
+                
+                <div class="row input-title">
+                    <div class="col-4">
+                        <h4>Общий вес снаряжения<h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-5">
+                        <input class="calc-inp" autocomplete="off" id="weight">
+                    </div>
+                </div>
+                <div class="row input-title">
+                    <div class="col-12">
+                        <h4>Участники похода</h4>
+                    </div>
+                </div>
+                <div class="row calc-unit">
+                    <div class="col-3 input-section">
+                        <span class="input-name" >Имя:</span>
+                        <input class="calc-inp" id="name-inp" type="text">
+                    </div>
+                    <div class="col-2">
+                        <span class="input-name">Пол:</span>
+                        <div class="input-group mb-3">
+                            <select class="calc-inp" id="sexGroupSelect">
+                            <option value="1.6">Мужской</option>
+                            <option value="1">Женский</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <span class="input-name">Снаряжение:</span>
+                        <div class="input-group mb-3">
+                            <select class="calc-inp" id="equipGroupSelect">
+                            <option value="0.9">Любительское</option>
+                            <option value="1">Нормальное</option>
+                            <option value="1.1">Профессиональное</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <span class="input-name">Физическая подготовка:</span>
+                        <div class="input-group mb-3">
+                            <select class="calc-inp" id="strainghtGroupSelect">
+
+                            </select>
+                        </div>
+                    </div>
+                </div> 
+                <div class="row">
+                    <div class="col-3">
+                        <button class="btn" type="submit">Добавить участника</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="container main-content">
+            <div class="row">
+                <div class="col-12">
+                    <h4 class="total-weight">Общий вес: </h4>
+                    <p class="total-weight total-weight-number"></p>
+                </div>
+                <div class="col-12">
+                    <h4>Вес на каждого участника похода</h4>
+                </div>
+            </div>
+            <div class="row table-header">
+                <div class="col-2 ">Имя:</div>
+                <div class="col-2 ">Пол:</div>
+                <div class="col-2 ">Снаряжение:</div>
+                <div class="col-2 ">Физ. подготовка:</div>
+                <div class="col-2 ">Коэффициент:</div>
+                <div class="col-2">Рекомендуемый вес:</div>
+            </div>
+            <div class="result">
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container footer">
+            <div class="row">
+                <div class="col-2">
+                    <svg width="162" height="34">
+                        <use xlink:href="img/icons.svg#logo-dark"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 footer-content">
+                    <span>
+                        Все материалы, находящиеся на сервере являются собственностью автора (если не указано другое). Любое коммерческое использование без согласования с автором запрещено и карается общественным порицанием, плохой погодой на маршруте и муравьями под палаткой)
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/calculator.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
