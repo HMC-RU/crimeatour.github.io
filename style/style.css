@@ -102,7 +102,7 @@ select {
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
-  background: url(/img/dropdown.png) no-repeat right center;
+  background: url(../img/dropdown.png) no-repeat right center;
 }
 
 .input-title {
