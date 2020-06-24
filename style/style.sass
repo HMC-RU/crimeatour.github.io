@@ -1,0 +1,152 @@
+// Переменные
+$first-color: #333333;
+$second-color: #D99734;
+$bg: #E2E0E0;
+$font-color-lite: #E7E7E7;
+
+// Миксины
+@mixin font-style($s, $col) 
+    font-size: $s
+    color: $col
+
+// Шиблоны
+%links
+    color: $first-color
+    text-decoration: none
+%links-hover
+    color: $second-color
+    text-decoration: underline
+
+body
+    font-size: 16px;
+
+h1
+    text-transform: uppercase 
+    font-weight: bold
+    font-size: 36px
+    margin-top: 15px
+    margin-bottom: 15px
+
+h4
+    font-size: 18px
+    font-weight: 600
+
+// Стили для шапки
+.header
+    padding: 15px 0
+
+.header-link
+    display: flex
+
+.register-link
+    display: flex
+    align-items: center
+    margin-left: auto
+    .register-links
+        @extend %links
+        &:hover
+            @extend %links-hover
+
+.menu-bg
+    background-color: $first-color
+
+.menu-block
+    margin: 18px 0
+    display: flex
+    justify-content: space-between
+    a
+        color: $font-color-lite
+        text-transform: uppercase
+        &:hover
+            color: $second-color
+            text-decoration: none
+
+//Стили для основной секции
+.content 
+    background-color: $bg
+    padding: 18px 0
+    min-height: 800px
+    height: 100%
+
+
+.main-content
+    background-color: #fff
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding-top: 15px
+
+//Стили для формы
+.text-inp
+    min-width: 160px
+
+
+.calc-inp
+    padding: 10px
+    width: 100%
+    border: 1px solid #D99734
+    border-radius: 5px
+    outline: none
+    color: #494949
+    margin-top: 10px
+    margin-bottom: 10px
+select
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    background: url('/img/dropdown.png') no-repeat right center
+
+.input-title
+    font-weight: 600
+    font-size: 18px
+    padding: 10px 0
+
+.btn
+    padding: 10px 20px
+    width: 100%
+    border-radius: 0
+    background-color: $second-color
+    text-transform: uppercase
+    font-weight: 600
+    margin-bottom: 20px
+    &:hover
+        background-color: #E2AC5A
+
+.table-header
+    text-align: center
+    border-bottom: 1px solid $second-color
+    background-color: #E2AC5A
+    padding: 10px 0
+
+.person-result
+    padding: 10px 0
+    text-align: center
+    border-bottom: 1px solid $second-color
+
+.total-weight
+    font-weight: bold
+    text-transform: uppercase
+    margin-bottom: 10px
+    display: inline-block
+
+footer
+    padding: 20px 0
+    background-color: $first-color
+
+
+.footer-content
+    color: #9A9999
+    font-size: 14px
+    margin-top: 10px
+
+.delete-btn 
+    cursor: pointer;
+    display: flex;
+
+
+.column
+    display: flex
+    align-items: center
+    justify-content: space-around;
+
+.no-display
+    display: none
+
