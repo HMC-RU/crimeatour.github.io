@@ -59,12 +59,12 @@ const renderOperation = async (operation) => {
     listItem.classList.add('person-result');
     listItem.classList.add('row');
     listItem.innerHTML = `
-        <div class="col-2 person-name">${operation.name}</div>
-        <div class="col-2 sex">${operation.sex}</div>
-        <div class="col-2 equipment">${operation.equipment}</div>
-        <div class="col-2 strength">${operation.strainght}</div>
-        <div class="col-2 coefficient">${operation.coefficient}</div>
-        <div class="col-2 total-weight-number column">${operation.weight}
+        <div class="col-4 col-lg-2 person-name">${operation.name}</div>
+        <div class="col-lg-2 sex">${operation.sex}</div>
+        <div class="col-lg-2 equipment">${operation.equipment}</div>
+        <div class="col-lg-2 strength">${operation.strainght}</div>
+        <div class="col-4 col-lg-2 coefficient">${operation.coefficient}</div>
+        <div class="col-4 col-lg-2 total-weight-number column">${operation.weight}
         <div class="delete-btn" data-id="${operation.id}" >
         <svg class="delete-btn" data-id="${operation.id}" width="20" height="20">
                             <use xlink:href="img/icons.svg#cansel"></use>
