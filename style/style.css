@@ -50,7 +50,7 @@ h4 {
 }
 
 .menu-block {
-  margin: 18px 0;
+  margin: 8px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -184,5 +184,42 @@ footer {
 
 .no-display {
   display: none;
+}
+
+.nav-item {
+  text-align: center;
+}
+
+.navbar-toggler-icon {
+  fill: #fff;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+}
+
+.navbar {
+  min-height: 72px;
+}
+
+@media (max-width: 991.98px) {
+  .container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 991.98px;
+  }
+  .content {
+    padding-top: 0;
+  }
+  .sex {
+    display: none;
+  }
+  .equipment {
+    display: none;
+  }
+  .strength {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
